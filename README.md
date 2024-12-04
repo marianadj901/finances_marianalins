@@ -1,4 +1,4 @@
-# Finances
+# Finances - Mariana Lins
 
 ## Descrição
 
