@@ -42,16 +42,9 @@ def generate_report(client) -> str:
 
 
 def future_value_report(client, date: datetime) -> str:
-    """
-    Gera um relatório de projeção de rendimentos futuros para o cliente.
+    if not client.investments:
+        return "Nenhum investimento encontrado para projeção."
 
-    Args:
-        client (Client): O cliente para o qual o relatório de projeção será gerado.
-        date (datetime): A data para a qual se deseja fazer a projeção.
-
-    Returns:
-        str: Relatório de projeção de rendimentos futuros.
-    """
     report = f"Relatório de Projeção de Rendimentos Futuros - {client.name}\n"
     report += "=" * 50 + "\n\n"
 
