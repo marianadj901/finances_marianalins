@@ -1,0 +1,16 @@
+Relações entre as classes:
+
+Client -> Account (Associação)
+   - A classe Client pode possuir várias instâncias de Account.
+   - Implementado por meio de uma lista de objetos Account no atributo `accounts`.
+
+Account -> Transaction (Composição)
+   - Uma instância de Account contém várias instâncias de Transaction.
+   - Implementado pela lista `transactions` em Account.
+
+Client -> Investment (Associação)
+   - A classe Client pode possuir várias instâncias de Investment.
+   - Implementado por meio de uma lista de objetos Investment no atributo `investments`.
+
+Investment -> Account (Dependência)
+   - A classe Investment depende da classe Account para realizar transferências ao vender um investimento.
