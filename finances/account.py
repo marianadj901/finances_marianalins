@@ -3,21 +3,7 @@ from .transaction import Transaction
 from datetime import datetime
 
 class Account:
-    """
-    Classe para representar uma conta bancária.
-
-    Atributos:
-        name (str): Nome da conta.
-        balance (float): Saldo da conta.
-        transactions (List[Transaction]): Lista de transações na conta.
-    """
     def __init__(self, name: str) -> None:
-        """
-        Inicializa um objeto Account.
-
-        Args:
-            name (str): Nome da conta.
-        """
         self.name: str = name
         self.balance: float = 0.0
         self.transactions: List[Transaction] = []
