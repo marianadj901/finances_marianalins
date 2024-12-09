@@ -15,7 +15,7 @@ Para instalar o pacote e suas dependências, siga estas etapas:
 
 1. Clone o repositório:
     ```bash
-    git clone <URL_DO_REPOSITORIO>
+    git clone https://github.com/marianadj901/finances_marianalins
     cd finances
     ```
 
@@ -54,3 +54,4 @@ cliente.add_investment(investimento)
 # Gerando relatórios
 print(generate_report(cliente))
 print(future_value_report(cliente, datetime(2025, 12, 31)))
+
